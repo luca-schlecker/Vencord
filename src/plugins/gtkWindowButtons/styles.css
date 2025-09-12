@@ -1,0 +1,61 @@
+:root {
+    --custom-app-top-bar-height: calc(24px + 20px)
+}
+
+.winButton_c38106 {
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: rgba(128, 128, 128, 0.15);
+  transition: background ease 200ms;
+}
+
+.theme-dark .winButton_c38106 {
+  --csd-fg: #dddddd;
+}
+.theme-light .winButton_c38106 {
+  --csd-fg: #333333;
+}
+
+.winButton_c38106::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  mask-size: 16px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var(--csd-fg);
+}
+
+.winButtonClose_c38106::before {
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmVyc2lvbj0iMS4xIj4KIDxkZWZzPgogIDxzdHlsZSBpZD0iY3VycmVudC1jb2xvci1zY2hlbWUiIHR5cGU9InRleHQvY3NzIj4KICAgLkNvbG9yU2NoZW1lLVRleHQgeyBjb2xvcjojNDQ0NDQ0OyB9IC5Db2xvclNjaGVtZS1IaWdobGlnaHQgeyBjb2xvcjojNDI4NWY0OyB9IC5Db2xvclNjaGVtZS1OZXV0cmFsVGV4dCB7IGNvbG9yOiNmZjk4MDA7IH0gLkNvbG9yU2NoZW1lLVBvc2l0aXZlVGV4dCB7IGNvbG9yOiM0Y2FmNTA7IH0gLkNvbG9yU2NoZW1lLU5lZ2F0aXZlVGV4dCB7IGNvbG9yOiNmNDQzMzY7IH0KICA8L3N0eWxlPgogPC9kZWZzPgogPHBhdGggc3R5bGU9ImZpbGw6Y3VycmVudENvbG9yIiBjbGFzcz0iQ29sb3JTY2hlbWUtVGV4dCIgZD0iTSA1LDQgQSAxLDEgMCAwIDAgNCw1IDEsMSAwIDAgMCA0LjI5LDUuNzEgTCA2LjU5LDggNC4yOSwxMC4yOSBBIDEsMSAwIDAgMCA0LDExIDEsMSAwIDAgMCA1LDEyIDEsMSAwIDAgMCA1LjcxLDExLjcxIEwgOCw5LjQxIDEwLjI4LDExLjcgQSAxLDEgMCAwIDAgMTEsMTIgMSwxIDAgMCAwIDEyLDExIDEsMSAwIDAgMCAxMS43MSwxMC4yOSBMIDkuNDEsOCAxMS43LDUuNzIgQSAxLDEgMCAwIDAgMTIsNSAxLDEgMCAwIDAgMTEsNCAxLDEgMCAwIDAgMTAuMjksNC4yOSBMIDgsNi41OSA1LjcyLDQuMyBBIDEsMSAwIDAgMCA1LjcxLDQuMjkgMSwxIDAgMCAwIDUsNCBaIi8+Cjwvc3ZnPgo=");
+}
+
+.winButtonMinMax_c38106[aria-label=Maximize]::before {
+  /* Default Adwaita Icon */
+  mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuOTg4MjgxIDMuOTkyMTg4IHYgOC4wMTE3MTggaCA4LjAxMTcxOSB2IC04LjAxMTcxOCB6IG0gMiAyIGggNC4wMTE3MTkgdiA0LjAxMTcxOCBoIC00LjAxMTcxOSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPg==");
+}
+
+.gtk-papirus .winButtonMinMax_c38106[aria-label=Maximize]::before {
+  /* Papirus Icon Theme */
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmVyc2lvbj0iMS4xIj4KIDxkZWZzPgogIDxzdHlsZSBpZD0iY3VycmVudC1jb2xvci1zY2hlbWUiIHR5cGU9InRleHQvY3NzIj4KICAgLkNvbG9yU2NoZW1lLVRleHQgeyBjb2xvcjojNDQ0NDQ0OyB9IC5Db2xvclNjaGVtZS1IaWdobGlnaHQgeyBjb2xvcjojNDI4NWY0OyB9IC5Db2xvclNjaGVtZS1OZXV0cmFsVGV4dCB7IGNvbG9yOiNmZjk4MDA7IH0gLkNvbG9yU2NoZW1lLVBvc2l0aXZlVGV4dCB7IGNvbG9yOiM0Y2FmNTA7IH0gLkNvbG9yU2NoZW1lLU5lZ2F0aXZlVGV4dCB7IGNvbG9yOiNmNDQzMzY7IH0KICA8L3N0eWxlPgogPC9kZWZzPgogPHBhdGggc3R5bGU9ImZpbGw6Y3VycmVudENvbG9yIiBjbGFzcz0iQ29sb3JTY2hlbWUtVGV4dCIgZD0iTSA3LDQgQyA3LDQgNyw2IDksNiBIIDkuNSBDIDkuNzc3LDYgMTAsNi4yMjMgMTAsNi41IFYgNyBDIDEwLDkgMTIsOSAxMiw5IFYgNSBDIDEyLDQuNDQ2IDExLjU1NCw0IDExLDQgWiBNIDQsNyBWIDExIEMgNCwxMS41NTQgNC40NDYsMTIgNSwxMiBIIDkgQyA5LDEyIDksMTAgNywxMCBIIDYuNSBDIDYuMjIzLDEwIDYsOS43NzcgNiw5LjUgViA5IEMgNS45NjgxLDcuMTM3NyA0LDcgNCw3IFoiLz4KPC9zdmc+Cg==");
+}
+
+.winButtonMinMax_c38106[aria-label=Minimize]::before {
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmVyc2lvbj0iMS4xIj4KIDxkZWZzPgogIDxzdHlsZSBpZD0iY3VycmVudC1jb2xvci1zY2hlbWUiIHR5cGU9InRleHQvY3NzIj4KICAgLkNvbG9yU2NoZW1lLVRleHQgeyBjb2xvcjojNDQ0NDQ0OyB9IC5Db2xvclNjaGVtZS1IaWdobGlnaHQgeyBjb2xvcjojNDI4NWY0OyB9IC5Db2xvclNjaGVtZS1OZXV0cmFsVGV4dCB7IGNvbG9yOiNmZjk4MDA7IH0gLkNvbG9yU2NoZW1lLVBvc2l0aXZlVGV4dCB7IGNvbG9yOiM0Y2FmNTA7IH0gLkNvbG9yU2NoZW1lLU5lZ2F0aXZlVGV4dCB7IGNvbG9yOiNmNDQzMzY7IH0KICA8L3N0eWxlPgogPC9kZWZzPgogPHBhdGggc3R5bGU9ImZpbGw6Y3VycmVudENvbG9yIiBjbGFzcz0iQ29sb3JTY2hlbWUtVGV4dCIgZD0iTSA0LDEwIFYgMTIgSCAxMiBWIDEwIFoiLz4KPC9zdmc+Cg==");
+}
+
+.winButton_c38106:hover {
+  background: rgba(128, 128, 128, 0.25);
+  box-shadow: 0px 0px 2px #00000011;
+}
+
+.winButton_c38106 > svg {
+    display: none;
+}
+
+.winButtons_c38106 {
+  gap: var(--space-12);
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
